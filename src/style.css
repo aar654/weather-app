@@ -1,0 +1,78 @@
+html {
+    background: url("/dist/imgs/tokyo.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'header'
+        'main';
+    height: 100%;
+}
+
+#header {
+    grid-area: header;
+    display: flex;
+    gap: 5px;
+    margin-top: 25px;
+    justify-self: center;
+    color: white;
+}
+
+#logo{
+    height: 64px;
+    width: 64px;
+}
+
+#main {
+    justify-self: center;
+    grid-area: main;
+}
+
+::placeholder {
+    color: black;
+}
+
+#searchInput {
+    padding: 10px;
+    background-color: #FF9F9F;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px;
+    background-color: #ECCEAE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #ceb396;
+}
+
+.forecast{
+    border-radius: 5px;
+    -webkit-box-shadow: -18px 6px 49px -8px rgba(255,255,255,1);
+    -moz-box-shadow: -18px 6px 49px -8px rgba(255,255,255,1);
+    box-shadow: -18px 6px 49px -8px rgba(255,255,255,1);
+    border-width: 10px;
+    font-size: xx-large;
+    text-align: center;
+    width: 350px;
+    margin-top: 25px;
+    background-color: white;
+    justify-self: center;
+}
